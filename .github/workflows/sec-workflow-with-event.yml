@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+      - feature/*        # e.g., feature/hello or feature/hello-world
+      - feature/**       # e.g., feature/hello/world
+    paths:
+      - "temp.md"
 
 jobs:
   first-job:
